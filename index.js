@@ -2,6 +2,26 @@ let showMenu = false
 
 
 // FUNCTIONS
+function generateHomePage(){
+	return `<div class="home">
+			<div class="hero">
+				<h1>Charlie Kim</h1>
+				<h2>Web Developer/Designer</h2>
+				<br>
+				<h3>I am currently based in the Washington D.C. area.</h3>
+				<h4>I am a lover of dogs, music and all things code!</h4>
+				<br>
+
+				<div class="cta-btns">
+					<button class="cta-projects">Projects</button>
+					<button class="cta-contact">Contact Me</button>
+				</div>
+			</div>
+		</div>
+	
+	`
+}
+
 function generateAboutMePage (){
 	return `	
 
@@ -135,68 +155,82 @@ $('.dropdown-menu').on('click', (e)=>{
 	}
 })
 
-// HAMBURGER LINKS
+function homeGenerator(e){
+	e.preventDefault()
+	$('.menu').css('display', 'none');
+	$('main').show()
+	$('footer').show()
+	renderToPage(generateHomePage())
+}
 
-$('.about').on('click', (e)=>{
-
+function aboutGenerator(e){
 	e.preventDefault()
 	$('.menu').css('display', 'none');
 	$('main').show()
 	$('footer').show()
 
-
 	renderToPage(generateAboutMePage())
+}
 
-	
-})
-
-$('.projects').on('click', (e)=>{
+function projectsGenerator(e){
 	e.preventDefault()
-		$('.menu').css('display', 'none');
-		$('main').show();
-		$('footer').show()
+	$('.menu').css('display', 'none');
+	$('main').show();
+	$('footer').show()
 
-		renderToPage(generateProjectsPage())
-})
+	renderToPage(generateProjectsPage())
+}
 
-$('.contact').on('click', (e)=>{
+function contactGenerator(e){
 	e.preventDefault()
 	$('.menu').css('display', 'none');
 	$('main').show();
 	$('footer').show()
 
 	renderToPage(generateContactPage())
+}
+
+
+// HAMBURGER LINKS
+$('.about').on('click', (e)=>{
+	 aboutGenerator(e)
 })
 
+
+$('.projects').on('click', (e)=>{
+	projectsGenerator(e)
+})
+
+
+$('.contact').on('click', (e)=>{
+	contactGenerator(e)
+})
+
+
+
 // NAVBAR LINKS
+$('.home-icon').on('click', (e)=>{
+	homeGenerator(e)
+})
 
 $('.nav-about').on('click', (e)=>{
-
-	e.preventDefault()
-	$('.menu').css('display', 'none');
-	$('main').show()
-	$('footer').show()
-
-
-	renderToPage(generateAboutMePage())
-
-	
+	aboutGenerator(e)
 })
 
 $('.nav-projects').on('click', (e)=>{
-	e.preventDefault()
-		$('.menu').css('display', 'none');
-		$('main').show();
-		$('footer').show()
-
-		renderToPage(generateProjectsPage())
+	projectsGenerator(e)
 })
 
 $('.nav-contact').on('click', (e)=>{
-	e.preventDefault()
-	$('.menu').css('display', 'none');
-	$('main').show();
-	$('footer').show()
-
-	renderToPage(generateContactPage())
+	contactGenerator(e)
 })
+
+$('main').on('click', '.cta-projects', (e)=>{
+	projectsGenerator(e)
+})
+
+$('main').on('click', '.cta-contact', (e)=>{
+	contactGenerator(e)
+})
+
+renderToPage(generateHomePage())
