@@ -26,7 +26,6 @@ function generateAboutMePage (){
 	return `	
 
 	<div class="about-me">
-		<br>
 		<div class="bio">
 			<h1>About</h1>
 
@@ -49,7 +48,6 @@ function generateProjectsPage(){
 							<h1>Projects</h1>
 
 			</header>
-					<br>
 						
 				<div class="project1">
 					<div class="left-side">
@@ -107,27 +105,16 @@ function generateProjectsPage(){
 }
 
 function generateContactPage(){
-	return `<div class="contact-pg">			
-		<form action="/signup" method="post" class="form">
-			<fieldset name="contact-me">
-			<legend><h1>Contact</h1></legend>
-			  <label for="name">Name</label>
-			  <input placeholder="Name" type="text" name="name" id="name" required autofocus>
-			  
-			  <label for="email">Email</label>
-			  <input placeholder="Email" type="email" name="email" id="email" required>
-			  
-			  <label for="subject">Subject</label>
-			  <input placeholder="Subject" type="text" name="subject" id="subject" required>
-			  
-			  <label for="message">Message</label>
-			  <textarea name="Message" id="message" cols="" rows="" class="form-msg"></textarea>
-
-	      		<br>
-			  <button type="submit">Submit</button>
-			</fieldset>
-
-		  </form>
+	return `<div class="contact-pg">
+				<div class="contact-socials">
+							<header><h1> Contact </h1></header>
+			<br>
+			<ul class="contact-socials-ul">
+				<li><a href="mailto:cwkim3@gmail.com"><i class="fas fa-envelope"></i><span class="contact-text">cwkim3@gmail.com</span></a> </li>
+				<li><a href="https://github.com/iamcharliekim" target="_blank"><i class="fab fa-github"></i><span class="contact-text">github.com/iamcharliekim</span></a></li>		
+				<li><a href="https://www.linkedin.com/in/charleswkim/" target="_blank"><i class="fab fa-linkedin"></i><span class="contact-text">linkedin.com/in/charleswkim</span></a></li>
+			</ul>
+		</div>
 		  
 		 </div>
 
