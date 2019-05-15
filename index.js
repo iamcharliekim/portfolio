@@ -3,21 +3,43 @@ let showMenu = false
 
 // FUNCTIONS
 function generateHomePage(){
-	return `<div class="home">
+	return `		<div class="home">
 			<div class="hero">
-				<h1>Charlie Kim</h1>
-				<h2>Web Developer/Designer</h2>
-				<br>
-				<h3>I am currently based in the Washington D.C. area.</h3>
-				<h4>I am a lover of dogs, music and all things code!</h4>
-				<br>
+				<div class="hero-header">
+					<header>
+						<div class="profile-pic-wrapper">
+							<img src="images/profile.jpg" alt="" class="profile">
+						</div>
+						
+					</header>
 
-				<div class="cta-btns">
+				
+				<div class="hero-text">
+					<h1>Charlie Kim</h1>
+
+					<h2>Web Developer/Designer</h2>
+					<br>
+
+					<h3>I am currently based in the Washington D.C. area.</h3>
+					<h4>I am a lover of dogs, music and all things code!</h4>
+					
+					<div class="cta-btns">
 					<button class="cta-projects">Projects</button>
 					<button class="cta-contact">Contact Me</button>
 				</div>
+				</div>
+
+
+				</div>
+
+	
+
+				<br>
+				
+
+				
 			</div>
-		</div>
+		</div>	
 	
 	`
 }
@@ -56,7 +78,7 @@ function generateProjectsPage(){
 						<h2>The Red Hot Chili Peppers Quiz App</h2>
 
 						<div class="description">
-							Find out what kind of RHCP fan you are by taking this quiz.  Users are asked 5 multiple-choice RHCP-trivia questions and given feedback at the end to determine whether you are a fan, super-fan, or just a poser!  
+							This quiz app is a tribute to one of my favorite bands of all time, The Red Hot Chili Peppers!  Users are asked 5 multiple-choice RHCP-trivia questions and given feedback at the end to determine whether you are a fan, super-fan, or just a poser!  
 						</div>
 						
 					</div>
@@ -155,7 +177,6 @@ function aboutGenerator(e){
 	$('.menu').css('display', 'none');
 	$('main').show()
 	$('footer').show()
-
 	renderToPage(generateAboutMePage())
 }
 
