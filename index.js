@@ -200,6 +200,10 @@ function contactGenerator(e){
 
 
 // HAMBURGER LINKS
+$('.menu-home').on('click', (e)=>{
+	 homeGenerator(e)
+})
+
 $('.about').on('click', (e)=>{
 	 aboutGenerator(e)
 })
@@ -218,6 +222,10 @@ $('.contact').on('click', (e)=>{
 
 // NAVBAR LINKS
 $('.home-icon').on('click', (e)=>{
+	homeGenerator(e)
+})
+
+$('.nav-home').on('click', (e)=>{
 	homeGenerator(e)
 })
 

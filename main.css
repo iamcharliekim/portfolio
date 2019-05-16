@@ -94,11 +94,11 @@ navbar {
 	font-weight: 700;
 }
 
-.about, .projects, .contact{
+.menu-home, .about, .projects, .contact{
 	background-color: #0B0C10;
 	width: 100%;
 	text-align: center;
-	height: 30%;
+	height: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -107,7 +107,7 @@ navbar {
 	font-size: 3rem;
 	color: white
 }
-.about:hover, .projects:hover, .contact:hover{
+.menu-home:hover, .about:hover, .projects:hover, .contact:hover{
 	background-color: #1F2833;
 }
 .contact {
@@ -202,7 +202,6 @@ main {
 	overflow: auto;
 	min-height: 100%;
 	max-width: 600px;
-	margin-bottom: 50px;
 }
 
 main > div {
@@ -313,7 +312,8 @@ main h4 {
 
 .projects-page {
 	width: 100%;
-	padding: 0
+	padding: 0;
+	padding-bottom: 50px;
 }
 
 .projects-page > header {
@@ -534,7 +534,13 @@ footer {
 	.navbar-list li div {
 		color: white;
 		cursor: pointer;
-		font-weight: 700
+		font-weight: 700;
+	}	
+	.navbar-list li div:active {
+		color: white;
+		cursor: pointer;
+		font-weight: 700;
+		border-bottom: 2px solid #848FA5
 	}
 	
 	.navbar-socials {
