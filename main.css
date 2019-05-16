@@ -7,9 +7,7 @@
 html {
 	height: 100%;
 	font-family: 'Roboto', sans-serif;
-	line-height: 35px;
-	
-
+	line-height: 35px; 
 }
 
 body {
@@ -22,13 +20,11 @@ body {
     ), url(images/motherboard.jpg);
 	background-position: center;
 	background-size: cover;	
-	
 }
 
 .navbar-menu {
 	display: none;
 }
-
 
 navbar {
 	width: 100%;
@@ -39,8 +35,6 @@ navbar {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
-	
 }
 
 .inner-nav {
@@ -49,13 +43,12 @@ navbar {
 	justify-content: space-between;
 	align-items: center;
 	max-width: 1200px;
-	padding: 30px;
+	padding: 20px;
 	padding-left: 10px;
 	padding-right: 10px;
 }
 
-
-.inner-nav header h1 a {
+.home-icon {
 	text-decoration: none;
 	color: white;
 	font-weight: bolder;
@@ -66,7 +59,8 @@ navbar {
 }
 
 .home-icon:hover {
-	color: gray
+	color: #848FA5;
+	cursor: pointer
 }
 
 .hamburger {
@@ -88,19 +82,17 @@ navbar {
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
-	
 }
 
-.navbar-list li a:hover {
-	color: gray;
+.navbar-list li div:hover {
+	color: #848FA5;
 	font-weight: 700;
 }
 
 .navbar-socials li a:hover {
-	color: gray;
+	color: #848FA5;
 	font-weight: 700;
 }
-
 
 .about, .projects, .contact{
 	background-color: #0B0C10;
@@ -141,7 +133,6 @@ navbar {
 	align-items: center;
 	padding: 30px;
 	font-size: 1.5rem;
-	
 }
 
 .socials-ul li a {
@@ -153,6 +144,9 @@ navbar {
 .socials-ul li a i {
 	transform: scale(2)
 }
+.socials-ul li a i:hover {
+	color: #848FA5
+}
 
 .hero {
 	display: flex;
@@ -160,6 +154,7 @@ navbar {
 	justify-content: center;
 	align-items: center;
 }
+
 .hero-header {
 	display: flex;
 	flex-direction: column;
@@ -172,11 +167,6 @@ navbar {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	
-}
-
-.hero-header header h1 {
-	
 }
 
 .profile-pic-wrapper {
@@ -197,13 +187,11 @@ navbar {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-		text-align: center;
-
+	text-align: center;
 }
 
-
 main {
-	padding-top: 165px;
+	padding-top: 150px;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
@@ -213,21 +201,19 @@ main {
 	color: white;
 	padding-bottom: 50px;
 	overflow: auto;
-	min-height: 100%;
-	
+	min-height: 97.99%;
+	max-width: 600px;
+	margin-bottom: 20px;
 }
 
-main > div{
+main > div {
 	padding: 0;
 	margin: 0 ;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	margin-bottom: 20px;
-			width: 100%;
-
-	
+	margin-bottom: 20px;	
 }
 
 main > div:first-child{
@@ -236,52 +222,38 @@ main > div:first-child{
 	justify-content: center;
 	align-items: center;
 	margin: 0
-	
 }
-
-.home {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
 
 main h1 {
 	font-size: 50px;
 	font-weight: 500;
 	margin-bottom: 20px;
-	
 }
 
-main img{
+main img {
 	width: 100%;
 	max-width: 800px;
 	margin: 10px 5px;
 	border: 1px solid black;
 }
 
-
-
-
 main h1, h2, h3, h4, h5 {
 	font-weight: normal;
-
+	
 }
 
 main h2 {
-	font-size: 25px;
+	font-size: 30px;
 	color: #C5C6C7;
 }
 
 main h3 {
-	font-size: 18px;
+	font-size: 20px;
 	margin-bottom: 20px
 }
 
 main h4 {
-	font-size: 16px;
+	font-size: 18px;
 }
 
 
@@ -289,7 +261,7 @@ main h4 {
 	padding: 15px;
 	width: 130px;
 	font-size: 18px;
-	
+	font-weight: 500;
 	background-color: white;
 	color: rgb(29, 30, 34);
 	cursor: pointer;
@@ -350,7 +322,6 @@ main h4 {
 }
 
 .project1 {
-	
 	font-size: 20px;
 	width: 100%;	
 	display: flex;
@@ -361,8 +332,7 @@ main h4 {
 
 .thumbnail-wrapper {
 	width: 100%;
-		margin-top: 20px;
-
+	margin-top: 20px;
 }
 
 .project1 img {
@@ -374,11 +344,9 @@ main h4 {
 .technologies {
 	width: 100%;
 	color: black;
-	margin-top: 20px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
 }
 
 .tech-icons {
@@ -391,12 +359,12 @@ main h4 {
 
 .tech-icons li {
 	margin: 5px;
-	
 }
 
 .tech-icons li img {
-	width: 30px;
+	width: 50px;
 	vertical-align: middle;
+	border: none;
 }
 
 .links {
@@ -406,22 +374,25 @@ main h4 {
 	
 }
 
-
-
 .links button {
 	padding: 15px;
 	width: 100%;
 	font-size: 18px;
-	background-color: inherit;
-	color: white;
+	background-color: white;
+	color: #1F2833;
 	cursor: pointer;
-	border: 2px solid white;
+	border: 2px solid black;
 	margin: 5px 0;
+	font-weight: 500
 }
 
 .links button:hover {
-	background-color: white;
-	color: #1F2833
+	background:  linear-gradient(
+      rgba(29, 30, 34, 0.9),
+      rgba(29, 30, 34, 0.6)
+    ), url(images/motherboard.jpg);
+	color: white;
+	border: 2px solid white
 }
 
 .project1 {
@@ -454,28 +425,15 @@ main h4 {
 	text-align: left
 }
 
-
-.contact-pg {
-	display: flex;
-	justify-content: flex-start;
-	width: 100%;
-	
-}
-
-.contact-pg h1 {
-}
-
 .contact-socials {
 	margin-top: 20px;
 }
 
 .contact-socials-ul {
-	
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start
-	
 }
 
 .contact-socials-ul li {
@@ -489,15 +447,13 @@ main h4 {
 .contact-socials-ul li a i {
 	color: white;
 	font-size: 30px;
-	margin: 10px 0
+	margin: 10px 0;
 }
 
 .contact-text {
-	font-size: 16px;
+	font-size: 18px;
 	margin-left: 10px;
-	color: #C5C6C7;
-;
-
+	color: white;
 }
 
 footer {
@@ -506,7 +462,7 @@ footer {
 	align-items: center;
 	width: 100%;
 	color: white;
-	font-size: 16px;
+	font-size: 18px;
 	height: 50px;
 	position: relative;
 	margin-top: -50px;
@@ -526,8 +482,8 @@ footer {
 	margin: 0 10px;
 }
 
-
-@media (max-height: 668px){
+.footer-links li a i:hover {
+	color: #848FA5
 }
 
 @media (min-width: 768px){
@@ -543,7 +499,7 @@ footer {
 	}
 	
 	.inner-nav header {
-		width: 25%;
+		width: 33%;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -576,6 +532,12 @@ footer {
 		margin: 0 15px;
 	}
 	
+	.navbar-list li div {
+		color: white;
+		cursor: pointer;
+		font-weight: 700
+	}
+	
 	.navbar-socials {
 		width: 50%;
 		display: flex;
@@ -588,85 +550,82 @@ footer {
 
 	}
 	
+	main h1 {
+		font-size: 55px
+	}
+	
 	.home {
 		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		width: 100%;
+	}
+
+	.hero {
+		display: flex;
+		flex-direction: row;
 		justify-content: flex-start;
 		align-items: flex-start;
 		width: 100%
 	}
 	
-.hero {
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	align-items: flex-start;
-	width: 100%
-}
-.hero-header {
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	align-items: flex-start;
-}
+	.hero-header {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
 
-.hero-header header{
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: center;
-	
-}
+	.hero-header header{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
 
-.hero-header header h1 {
-	margin-left: 20px
-	
-}
+	}
 
-.profile-pic-wrapper {
-	width: 250px;
-	margin-bottom: 20px;
-}
+	.hero-header header h1 {
+		margin-left: 20px
+	}
 
-.profile {
-	border-radius: 50%;
-	width: 100%;
-}
+	.profile-pic-wrapper {
+		width: 250px;
+		margin-bottom: 20px;
+	}
 
-.hero-text {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: flex-start;
-	text-align: left;
+	.profile {
+		border-radius: 50%;
+		width: 100%;
+	}
 
-}
+	.hero-text {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		text-align: left;
+	}
 	
 	.cta-btns {
 		margin-top: 20px;
 	}
-
 	
 	.projects-page > header {
 		width: 100%
 	}
 	
 	main > div:first-child{
-		max-width: 800px;
 		margin-bottom: 20px;
 	}
-	
-	
 	
 	.project1 {
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: flex-start
-		
-		
-		
 	}
+	
 	.left-side {
 		width: 45%;
 	}
@@ -677,7 +636,6 @@ footer {
 		align-items: center;
 		justify-content: center;
 		width: 50%;
-		
 	}
 	
 	.thumbnail-wrapper {
@@ -689,5 +647,18 @@ footer {
 		width: 100%
 	}
 	
-	
+	.contact-socials-ul li a i {
+		color: white;
+		font-size: 50px;
+		margin: 10px 0;
+	}
+
+	.contact-text {
+		font-size: 18px;
+		margin-left: 10px;
+		color: white;
+	}
+	.contact-text {
+		font-size: 25px
+	}
 }

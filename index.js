@@ -17,7 +17,7 @@ function generateHomePage(){
 				<div class="hero-text">
 					<h1>Charlie Kim</h1>
 
-					<h2>Web Developer/Designer</h2>
+					<h2>Web Developer</h2>
 					<br>
 
 					<h3>I am currently based in the Washington D.C. area.</h3>
