@@ -89,9 +89,11 @@ navbar {
 	font-weight: 700;
 }
 
-.navbar-socials li a:hover {
+.navbar-socials li i:hover {
 	color: #848FA5;
 	font-weight: 700;
+	transform: scale(1.1);
+
 }
 
 .menu-home, .about, .projects, .contact{
@@ -110,6 +112,7 @@ navbar {
 .menu-home:hover, .about:hover, .projects:hover, .contact:hover{
 	background-color: #1F2833;
 }
+
 .contact {
 	display: flex;
 	flex-direction: column;
@@ -191,7 +194,7 @@ navbar {
 }
 
 main {
-	padding-top: 150px;
+	padding-top: 120px;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
@@ -212,6 +215,7 @@ main > div {
 	align-items: center;
 	justify-content: center;
 	margin-bottom: 20px;	
+	padding-bottom: 50px;
 }
 
 main > div:first-child{
@@ -237,7 +241,6 @@ main img {
 
 main h1, h2, h3, h4, h5 {
 	font-weight: normal;
-	
 }
 
 main h2 {
@@ -246,12 +249,18 @@ main h2 {
 }
 
 main h3 {
-	font-size: 20px;
+	font-size: 22px;
 	margin-bottom: 20px
 }
 
 main h4 {
+	font-size: 20px;
+	margin-bottom: 20px
+}
+
+main h5 {
 	font-size: 18px;
+	margin-bottom: 20px
 }
 
 
@@ -338,6 +347,7 @@ main h4 {
 	width: 100%;
 	height: 100%;
 	margin: 0 auto;
+	min-width: 300px;
 }
 
 .technologies {
@@ -424,11 +434,32 @@ main h4 {
 	text-align: left
 }
 
+.contact-pg {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
 .contact-socials {
-	margin-top: 20px;
+	padding-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.contact-socials header {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start
 }
 
 .contact-socials-ul {
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -535,14 +566,15 @@ footer {
 		color: white;
 		cursor: pointer;
 		font-weight: 700;
-	}	
-	.navbar-list li div:active {
-		color: white;
-		cursor: pointer;
-		font-weight: 700;
-		border-bottom: 2px solid #848FA5
-	}
+	}		
 	
+	
+
+	.navbar-list li div:hover {
+		transform: scale(1.1);
+	}	
+	
+		
 	.navbar-socials {
 		width: 50%;
 		display: flex;
@@ -553,6 +585,10 @@ footer {
 		list-style: none;
 		margin: 0 15px;
 
+	}
+	
+	main { 
+		padding-bottom: 50px;
 	}
 	
 	main h1 {
@@ -617,6 +653,10 @@ footer {
 		margin-top: 20px;
 	}
 	
+	.projects-page {
+		padding-bottom: 0
+	}
+	
 	.projects-page > header {
 		width: 100%
 	}
@@ -629,6 +669,10 @@ footer {
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: flex-start
+	}
+	
+	.project1 img:hover {
+		border: 2px solid white;
 	}
 	
 	.left-side {
