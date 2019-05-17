@@ -145,7 +145,7 @@ navbar {
 }
 
 .socials-ul li a i {
-	transform: scale(2)
+	transform: scale(1.5)
 }
 .socials-ul li a i:hover {
 	color: #848FA5
