@@ -325,6 +325,12 @@ main h5 {
 
 .projects-page > header {
 	width: 100%;
+	margin-bottom: 20px
+}
+
+.project {
+	margin-bottom: 30px;
+	border-bottom: 2px solid white;
 }
 
 .project1 {
@@ -336,6 +342,10 @@ main h5 {
 	align-items: flex-start;
 }
 
+.quiz-app-ss {
+	width: 50%
+}
+
 .thumbnail-wrapper {
 	width: 100%;
 	margin-top: 20px;
@@ -345,7 +355,7 @@ main h5 {
 	width: 100%;
 	height: 100%;
 	margin: 0 auto;
-	min-width: 300px;
+	min-width: 200px;
 }
 
 .technologies {

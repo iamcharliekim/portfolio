@@ -62,7 +62,7 @@ function generateProjectsPage(){
 			<header>
 				<h1>Projects</h1>
 			</header>
-
+		<div class="project">
 			<div class="project1">
 				<div class="left-side">
 					<h2>The Red Hot Chili Peppers Quiz App</h2>
@@ -99,6 +99,47 @@ function generateProjectsPage(){
 					<button>See It Online</button>
 				</a>
 			</div>
+		</div>
+		
+		<div class="project">
+
+			<div class="project1">
+				<div class="left-side">
+					<h2>Perfect Date App</h2>
+
+					<div class="description">
+						The Perfect Date App allows you to plan, and keep track of all the logistics and details that go into the perfect date by utilizing multiple APIs (Seat Geek API, Google GeoCode API, Zomato API) to help users search and find local entertainment and restaurants within walking distance.
+					</div>
+				</div>
+
+				<div class="right-side">
+					<div class="thumbnail-wrapper">
+						<a href="https://iamcharliekim.github.io/perfect-date-app/" target="_blank">
+							<img src="images/page2-event-search.png" alt="" class="quiz-app-ss">
+						</a>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="technologies">
+				<ul class='tech-icons'>
+					<li><img src="images/html5.svg" alt=""></li>
+					<li><img src="images/css.svg" alt=""></li>
+					<li><img src="images/javascript.svg" alt=""></li>
+					<li><img src="images/jquery.svg" alt=""></li>
+				</ul>
+			</div>
+
+			<div class="links">
+				<a href="https://github.com/iamcharliekim/perfect-date-app" target="_blank">
+					<button>GitHub Repo</button>
+				</a>
+				<a href="https://iamcharliekim.github.io/perfect-date-app/" target="_blank">
+					<button>See It Online</button>
+				</a>
+			</div>
+		</div>
 		</div>
 `
 }
